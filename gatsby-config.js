@@ -6,6 +6,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-theme-material-ui`,
+      // If you want to use styled components you should change the injection order.
+      options: {
+        //pathToTheme: 'src/theme.js'
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
